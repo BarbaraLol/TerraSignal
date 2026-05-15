@@ -88,18 +88,14 @@
     position: relative;
     overflow: hidden;
     background:
-      radial-gradient(ellipse at 20% 80%, rgba(107, 127, 94, 0.08) 0%, transparent 60%),
-      radial-gradient(ellipse at 80% 20%, rgba(184, 92, 56, 0.05) 0%, transparent 50%),
-      var(--color-cream);
+      url('img/grape.jpg') center center / cover no-repeat;
   }
   .hero::before {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image:
-      repeating-linear-gradient(90deg, var(--color-sage-pale) 0px, var(--color-sage-pale) 1px, transparent 1px, transparent 80px),
-      repeating-linear-gradient(0deg, var(--color-sage-pale) 0px, var(--color-sage-pale) 1px, transparent 1px, transparent 80px);
-    opacity: 0.25;
+    background:
+      linear-gradient(160deg, rgba(45, 36, 24, 0.78) 0%, rgba(45, 36, 24, 0.55) 40%, rgba(45, 36, 24, 0.35) 100%);
     pointer-events: none;
   }
   .hero-content { position: relative; z-index: 1; max-width: 780px; }
@@ -109,9 +105,9 @@
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--color-sage);
-    background: rgba(107, 127, 94, 0.1);
-    border: 1px solid rgba(107, 127, 94, 0.2);
+    color: var(--color-sage-pale);
+    background: rgba(197, 212, 181, 0.12);
+    border: 1px solid rgba(197, 212, 181, 0.25);
     padding: 0.4rem 1rem;
     border-radius: 2rem;
     margin-bottom: 2rem;
@@ -120,20 +116,22 @@
     font-family: var(--font-display);
     font-size: clamp(2.4rem, 5.5vw, 3.8rem);
     line-height: 1.15;
-    color: var(--color-earth);
+    color: var(--color-sand-light);
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.3);
   }
   .hero h1 em {
     font-style: italic;
-    color: var(--color-sage);
+    color: var(--color-sage-pale);
   }
   .hero p {
     font-size: 1.15rem;
-    color: var(--color-text-soft);
+    color: rgba(244, 240, 232, 0.88);
     max-width: 600px;
     margin: 0 auto 2.5rem;
     line-height: 1.8;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.25);
   }
   .hero-cta {
     display: inline-block;
